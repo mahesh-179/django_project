@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>My Simple Webpage</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <h1>STUDENT ADMISSION DATA</h1>
+    <p>This is list of student who applied in PNC for Bsc.CSIT</p>
+    <table>
+        {% if myobj %}
+        <thead>
+            <th>Student Name</th>
+            <th>Student Age</th>
+            <th>Student Address</th>
+            <th>Student Rank</th>
+            <th>Student College</th>
+            <th>Student Phone No</th>
+        </thead>
+        {% for e in myobj %}
+        <tr>
+            <td>{{e.ename}}</td>
+            <td>{{e.eage}}</td>
+            <td>{{e.eadd}}</td>
+            <td>{{e.erank}}</td>
+            <td>{{e.ecollege}}</td>
+            <td>{{e.ephno}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <h1><center> NO DATA FOUND </h1></center>
+    {% endif %} 
+
+
+    
+    
+    
+</body>
+</html>
