@@ -1,0 +1,21 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django database
+db.sqlite3
+*.sqlite3
+
+# Virtual environment
+venv/
+
+# Editor files
+.vscode/
+.idea/
+
+# Django migrations (optional: track only initial migration if you want)
+firstapp/migrations/*.pyc
+firstapp/migrations/__pycache__/
+
