@@ -1,0 +1,17 @@
+
+echo __pycache__/>.gitignore
+echo *.pyc>>.gitignore
+echo *.pyo>>.gitignore
+echo *.pyd>>.gitignore
+echo db.sqlite3>>.gitignore
+echo *.sqlite3>>.gitignore
+echo venv/>>.gitignore
+echo .vscode/>>.gitignore
+__pycache__/ 
+*.pyc 
+*.pyo 
+*.pyd 
+db.sqlite3 
+*.sqlite3 
+venv/ 
+.vscode/

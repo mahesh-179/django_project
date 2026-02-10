@@ -7,7 +7,7 @@ class Student(models.Model):
     eadd=models.CharField(max_length=50)
     erank=models.IntegerField()
     ecollege=models.CharField(max_length=50)
-    ephno=models.IntegerField()
+    ephno = models.CharField(max_length=50)
 
     def __str__(self):
         return self.ename  # Return name as string

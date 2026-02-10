@@ -13,7 +13,7 @@ django.setup()
 from firstapp.models import Student
 
 
-faker = Faker("en_IN")
+faker = Faker("en_US")
 
 
 def population(n):
@@ -37,4 +37,4 @@ def population(n):
     print(f"{n} records inserted successfully ✅")
 
 
-population(10)
+population(15)
