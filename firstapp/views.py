@@ -23,6 +23,5 @@ def index(request):
                 gpa=form.cleaned_data["gpa"],
                college=form.cleaned_data["college"],
             )
-        form = StudentForm()
     context = {"form": form}
     return render(request, "firstapp/form.html",context=context)
